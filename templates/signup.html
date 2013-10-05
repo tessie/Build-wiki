@@ -1,35 +1,50 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
-    <head>
-        <title>Signup</title>
-    </head>
-    <body>
-<h1>signup</h1>
-        <form method=post>
-	
-    <label>Name
-    <input type="text" name="name" value = "{username}">
-    </label>
-    <br>
-    <br>
-    <label>Email
-    <input type=" text" name="email" value="{email}">
-        </label>
-<br><br>
-    <label>Password
-    <input type="password" name ="password" value="">
-        </label>
-    <br>
-    <br>
-        <label>Confirm password
-    <input type= "password" name="pwd" value="">
-            </label>
-            <br>
-             <br>
-   <input type="submit">
+<head>
+<title>Tessy Joseph John</title>
+<style>
+body
+	{
+	background:black;
+	text-align:center;
 
-</form>
+	}
+p
+	{
+	color:white;
+	}
+input
+	{
+	padding:20px;
+	color:black;
+	}
+input[type="submit"]
+	{
+	color:white;
+	background:red;
+	}
+#error
+	{
+	color:red;
+	}
+</style>
+</head>
+<body>
+<p>Signup</p>
+<input type="text" name="username"placeholder="name" value={{username}}>
+<div class="error">error_username</div>
+<br>
+<input type="password" name="pass"placeholder="password" value={{username}}>
+<div class="error">error_password</div>
+<br>
+<input type="password" name="con"placeholder="confirm password"value={{username}}>
+<div class="error">error_varpass</div>
+<br>
+<input type="email" name="your_email"placeholder="your_email"value={{youremail}}>
+<div class="error">error_email</div>
+<br>
+<input type="submit">
+<br>
+</body>
 
-
-    </body>
 </html>
