@@ -1,0 +1,52 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>Tessy Joseph John</title>
+<style>
+body
+	{
+	background:black;
+	text-align:center;
+
+	}
+p
+	{
+	color:white;
+	}
+input
+	{
+	padding:20px;
+	color:black;
+	}
+input[type="submit"]
+	{
+	color:white;
+	background:red;
+	}
+.error
+	{
+	color:white;
+	}
+</style>
+</head>
+<body>
+<p>Signup</p>
+<form method="post">
+<input type="text" name="username"placeholder="name" value={{username}}>
+<div class="error">{{error_username}}</div>
+<br>
+<input type="password" name="password"placeholder="password" value="">
+<div class="error">{{error_password}}</div>
+<br>
+<input type="password" name="verify" placeholder="confirm_password" value="">
+<div class="error">{{error_verify}}</div>
+<br>
+<input type="email" name="email"placeholder="your_email"value={{email}}>
+<div class="error">{{error_email}}</div>
+<br>
+<input type="submit">
+<br>
+</form>
+</body>
+
+</html>
