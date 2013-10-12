@@ -10,7 +10,7 @@ handlers:
   static_dir: static
 
 - url: .*
-  script: blog.app
+  script: post.app
 
 
 libraries:
